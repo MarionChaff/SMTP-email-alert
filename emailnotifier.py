@@ -42,9 +42,9 @@ class EmailNotifier:
             text = alert.as_string()
             server.sendmail(self.email_user, recipient, text)
             server.quit()
-            print(f"Email envoyé")
+            print(f"Email sent")
         except Exception as e:
-            print(f"Erreur lors de l'envoi de l'email: {e}")
+            print(f"Error: {e}")
 
         return None
 
